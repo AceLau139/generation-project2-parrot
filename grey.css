@@ -1,0 +1,16 @@
+/* #rotate{
+    transform: rotateY(180deg);
+} */
+
+#rotate{
+    animation-name: start;
+    animation-duration: 8s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes start{
+    0% {transform: skew(0deg,360deg);}
+    50% {transform: skew(180deg,180deg);} 
+    100% {transform: skew(360deg,0deg);} 
+}
